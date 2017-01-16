@@ -3,6 +3,6 @@ dashboard-template.html;
 dashboard-template.js;
 dashboard-template.css;
 qliksense-card.html;
-shared-styles.html;
+polymer-mixins.html;
 qlik-logo.png;
 preview.png;
