@@ -54,6 +54,9 @@
 .buttons-end.borderbox button:nth-child(2) {
     display: none;
 }
+.qv-panel-current-selections .qv-selections-pager {
+    padding-right: 45px;
+}
 .current-selections-placeholder {
     height: 36px;
     display: flex;
@@ -64,6 +67,17 @@
 }
 .current-selections-placeholder span {
     display: none;
+}
+@media (max-width: 767px) {
+    .buttons.borderbox {
+        width: 45px;
+    }
+    .buttons.borderbox button:nth-child(1), .buttons.borderbox button:nth-child(2) {
+        display: none;
+    }
+    .qv-panel-current-selections .qv-selections-pager {
+        padding-left: 45px;
+    }
 }
 
 /*Fix selection toolbar options placement*/
