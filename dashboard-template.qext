@@ -1,0 +1,13 @@
+{
+	"type": "mashup-template",
+	"name": "Dashboard template",
+	"description": "Dashboard template for mashups",
+	"homepage" : "",
+	"author": "Francis Kabinoff",
+    "version" : "0.1.0",
+    "preview" : "preview.png",
+    "keywords" : "qlik-sense, mashup, dashboard",
+	"license" : "",
+	"repository" : "",
+    "dependencies" : { "qlik-sense" : ">=1.0.x" }
+}

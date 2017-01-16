@@ -1,0 +1,73 @@
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-card/paper-card.html">
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/iron-icons/iron-icons.html">
+
+<dom-module id="qliksense-card">
+  <template>
+    <style>
+      :host {
+        /*display: inline-block;*/
+        position: relative;
+        width: 100%;
+      }
+      :host.fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1000000;
+      }
+      paper-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-actions {
+        padding: 0px 16px;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+      }
+      .card-content {
+        flex: auto;
+        padding: 2px;
+      }
+    </style>
+
+    <paper-card>
+      <div class="card-actions">
+        <paper-icon-button icon="fullscreen" on-tap="fullscreenEnter" hidden$="{{fullscreen}}"></paper-icon-button>
+        <paper-icon-button icon="fullscreen-exit" on-tap="fullscreenExit" hidden$="{{!fullscreen}}"></paper-icon-button>
+      </div>
+      <div class="card-content" style$="height: {{contentHeight}};">
+        <content></content>
+      </div>
+    </paper-card>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'qliksense-card',
+      properties: {
+        contentHeight: {
+          type: String,
+          value: '300px'
+        },
+        fullscreen: {
+          type: Boolean,
+          value: false
+        }
+      },
+      fullscreenEnter: function() {
+        this.fullscreen = true;
+        $(this).addClass("fullscreen");
+        qlik.resize();
+      },
+      fullscreenExit: function() {
+        this.fullscreen = false;
+        $(this).removeClass("fullscreen");
+        qlik.resize();
+      }
+    });
+  </script>
+</dom-module>
