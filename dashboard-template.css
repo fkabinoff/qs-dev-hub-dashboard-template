@@ -1,37 +1,24 @@
-/*
-* Bootstrap layout
-*/
+/*Bootstrap layout*/
 .row {
     margin-bottom: 15px;
 }
 
-/*
-* Qlik objects
-*/
+/*Qlik objects*/
 .qvplaceholder, .qvobject {
     width: 100%;
     height: 100%;
 }
 
-/*
-* KPIs
-*/
+
+/*KPIs*/
 .kpi {
     height: 25vw;
     max-height: 180px;
     min-height: 120px;
+    background: #eee;
 }
 
-/*
-* Fix qv-filterpane
-*/
-.qv-filterpane {
-    overflow: visible;
-}
-
-/*
-* Get rid of rounded borders on qliksense objects
-*/
+/*Get rid of rounded borders on qliksense objects*/
 .qv-object, .sel-toolbar-card, .qv-object.qv-selections-active {
     -webkit-border-top-left-radius: 0;
     -moz-border-radius-topleft: 0;
@@ -48,9 +35,12 @@
     border-bottom-right-radius: 0;
 }
 
-/*
-* Selection toolbar 
-*/
+/*Qlik Contextual */
+.qui-immidiateContextual {
+    z-index: 10002;
+}
+
+/*Selection toolbar */
 #CurrentSelections {
     position:relative; 
     top:0; 
@@ -76,9 +66,20 @@
     display: none;
 }
 
-/*
-* Drawer
-*/
+/*Fix selection toolbar options placement*/
+.qv-panel-current-selections .remove, .qv-panel-current-selections .unlock, .qv-panel-current-selections .lock {
+    width: 20px;
+}
+.lui-clear-all {
+    line-height: 36px;
+}
+
+/*Fix qv-filterpane*/
+.qv-filterpane {
+    overflow: visible;
+}
+
+/*Drawer*/
 #drawer {
     z-index: 1;
 }
@@ -93,9 +94,7 @@
     height: calc(100vh - 35px);
 }
 
-/*
-* Main content area (paper-body)
-*/
+/*Main content area (paper-body)*/
 .paper-body {
     margin-top: 30px;
 }
