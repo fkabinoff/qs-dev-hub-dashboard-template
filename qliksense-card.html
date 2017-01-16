@@ -27,6 +27,8 @@
         padding: 0px 16px;
         border-bottom: 1px solid #ccc;
         text-align: right;
+      }
+      .card-actions paper-icon-button {
         z-index: 10000;
       }
       .card-content {
@@ -42,7 +44,13 @@
       }
       .card-content ::content .sel-toolbar-card {
         top: -35px !important;
+      }
+      :host.fullscreen .card-content ::content .sel-toolbar-card {
+        top: 6px !important;
       } 
+      :host.fullscreen .card-content ::content .sel-toolbar-list {
+        margin-right: 50px;
+      }
     </style>
 
     <paper-card>
