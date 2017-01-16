@@ -27,11 +27,19 @@
         padding: 0px 16px;
         border-bottom: 1px solid #ccc;
         text-align: right;
+        z-index: 10000;
       }
       .card-content {
         flex: auto;
         padding: 2px;
       }
+      .card-content ::content > .qvobject.with-title {
+        margin-top: -50px;
+        height: calc(100% + 50px);
+      }
+      .card-content ::content > .qvobject.with-title header {
+        margin-right: 50px;
+      } 
     </style>
 
     <paper-card>
@@ -40,7 +48,7 @@
         <paper-icon-button icon="fullscreen-exit" on-tap="fullscreenExit" hidden$="{{!fullscreen}}"></paper-icon-button>
       </div>
       <div class="card-content" style$="height: {{contentHeight}};">
-        <content></content>
+        <content id="content"></content>
       </div>
     </paper-card>
   </template>
