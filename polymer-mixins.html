@@ -15,16 +15,30 @@
             paper-toolbar img {
                 height: 24px;
             }
-
+            paper-drawer-panel {
+                --paper-drawer-panel-main-container: {
+                    overflow: auto;
+                };
+            }
             paper-drawer-panel {
                 --paper-drawer-panel-scrim: {
                     z-index: 10000;
                 };
             }
             paper-drawer-panel {
+                --paper-drawer-panel-left-drawer-container: {
+                    z-index: 10001;
+                    margin-top: 1px;
+                    background: #888;
+                }
+            }
+            paper-drawer-panel {
                 --paper-drawer-panel-right-drawer-container: {
                     z-index: 10001;
                 };
+            }
+            paper-menu {
+                --paper-menu-background-color: background: #888;
             }
         </style>
     </template>
