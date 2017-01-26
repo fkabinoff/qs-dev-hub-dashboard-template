@@ -33,7 +33,7 @@ require(["js/qlik"], function (qlik) {
 
 	if (app) {
 		app.getObject('CurrentSelections','CurrentSelections');
-		$(".filter-drawer-toggle").click(function() {
+		$(".filter-drawer-toggle, paper-menu paper-item").click(function() {
 			qlik.resize();
 		});
 	} else {
