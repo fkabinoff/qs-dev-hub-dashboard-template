@@ -28,7 +28,6 @@
     border-radius: 3px;
 }
 
-
 /*Get rid of rounded borders on qliksense objects*/
 .qv-object, .sel-toolbar-card, .qv-object.qv-selections-active {
     -webkit-border-top-left-radius: 0;
@@ -148,7 +147,7 @@
     background-color:   #F3F4F5;
 }
 
-/*AMZ*/
+/*new skin*/
 .paper-toolbar-0 .toolbar-tools.paper-toolbar .title {
     font-family: 'Montserrat', sans-serif;
 }
