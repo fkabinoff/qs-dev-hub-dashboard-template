@@ -2,6 +2,9 @@
 .row {
     margin-bottom: 30px;
 }
+.col-xs-12{
+    margin-bottom: 15px;
+}
 
 /*Qlik objects*/
 .qvplaceholder, .qvobject {
@@ -123,10 +126,7 @@
     overflow: visible;
 }
 
-/*Drawer*/
-#drawer {
-    z-index: 1;
-}
+/*Filter Drawer*/
 .drawer-title {
     display: flex; 
     justify-content: center; 
@@ -141,82 +141,84 @@
 .filter-container {
     height: calc(100vh - 35px);
 }
+@media (max-width: 767px) {
+    .drawer-title{
+        height: 56px !important;
+    }
+}
 
 /*Main content area (paper-body)*/
 .paper-body {
     padding: 30px 15px;
 }
 #main{
-    background-color:   #F3F4F5;
+    background-color: #F3F4F5;
 }
 
-
-/*AMZ*/
+/*Main toolbar styles*/
 .paper-toolbar-0 .toolbar-tools.paper-toolbar .title {
     font-family: 'Montserrat', sans-serif;
 }
+
 /*Current selections restyling*/
-    .qv-panel-current-selections ,.qv-panel-current-selections .buttons-end .qv-subtoolbar-button, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
-        background-color: #E8EAEC !important;
-    }
-    .qv-panel-current-selections .buttons .qv-subtoolbar-button i, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button i{
-        color: #838383;
-    }
-    .qv-panel-current-selections .no-selection{
-        color: #838383;
-    }
-    .qv-panel-current-selections .buttons{
-        background: unset;
-        border: unset;
-    }
-    .qv-panel-current-selections .wrap, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
-        border: unset;
-    }
-    .qv-panel-current-selections .item{
-        font-weight: 300;
-        font-family: Arial, sans-serif;
-        color: #838383;
+.qv-panel-current-selections ,.qv-panel-current-selections .buttons-end .qv-subtoolbar-button, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
+    background-color: #E8EAEC !important;
+}
+.qv-panel-current-selections .buttons .qv-subtoolbar-button i, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button i{
+    color: #838383;
+}
+.qv-panel-current-selections .no-selection{
+    color: #838383;
+}
+.qv-panel-current-selections .buttons{
+    background: unset;
+    border: unset;
+}
+.qv-panel-current-selections .wrap, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
+    border: unset;
+}
+.qv-panel-current-selections .item{
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+    color: #838383;
 
-    }
-    .qv-panel-current-selections .item:hover{
-        color: #E8EAEC;
+}
+.qv-panel-current-selections .item:hover{
+    color: #E8EAEC;
+}
+.qv-panel-current-selections .remove{
+    padding-right: 5px;
+}
+.qv-panel-current-selections .buttons-end{
+    border-left: none;
+    box-shadow: none;
+}
+.qv-global-search-container{
+    z-index: 10003;
+}
+#dropShadow{
+    z-index: 10002;
+}
 
-    }
-    .qv-panel-current-selections li{
-
-    }
-    .qv-panel-current-selections .remove{
-        padding-right: 5px;
-    }
-    .qv-panel-current-selections .buttons-end{
-        border-left: none;
-        box-shadow: none;
-    }
-    .qv-global-search-container{
-        z-index: 10003;
-    }
-    #dropShadow{
-        z-index: 10002;
-    }
 /*Sidebar*/
-    paper-item{
-        background-color: #fff;
-        flex-direction: column !important;
-        height: 80px;
-        justify-content: center;
-        align-items: center;
-        color: #838383;
-    }
-    .paper-menu-0 .selectable-content.paper-menu .iron-selected{
-        font-weight: 300 !important;
-        background-color: #F5F5FA;
-        color: #3F51B5;
-    }
+paper-item{
+    background-color: #fff;
+    flex-direction: column !important;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    color: #838383;
+}
+.paper-menu-0 .selectable-content.paper-menu .iron-selected{
+    font-weight: 300 !important;
+    background-color: #F5F5FA;
+    color: #3F51B5;
+}
 
 /*modal styling*/
-    .modal{
-        z-index: 10050;
-    }
-    .modal-backdrop{
-        z-index: 10040;
-    }
+.modal{
+    z-index: 10050;
+}
+.modal-backdrop{
+    z-index: 10040;
+}
