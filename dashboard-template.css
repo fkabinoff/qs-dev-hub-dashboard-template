@@ -12,14 +12,14 @@
 .qv-object{
     padding: 0 15px 15px;
 }
-.qv-object-kpi{
+
+.qv-object.kpi{
     padding: 0;
 }
 
 .listbox-wrapper .qv-object{
     padding: 0px;
 }
-
 
 /*KPIs*/
 .kpi {
@@ -30,7 +30,6 @@
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
     border-radius: 3px;
 }
-
 
 /*Get rid of rounded borders on qliksense objects*/
 .qv-object, .sel-toolbar-card, .qv-object.qv-selections-active {
@@ -50,13 +49,13 @@
 }
 
 /*adjusting active chart borders*/
-
 .sel-toolbar-card{
     border: 1px solid #ccc;
     border-bottom: 1px solid #D9D9D9;
 }
 .qv-object.qv-selections-active{
     border: 1px solid #ccc;
+
     border-top: 1px solid #D9D9D9;
 }
 
@@ -150,6 +149,7 @@
 #main{
     background-color:   #F3F4F5;
 }
+
 
 /*AMZ*/
 .paper-toolbar-0 .toolbar-tools.paper-toolbar .title {
