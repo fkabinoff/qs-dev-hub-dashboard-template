@@ -232,6 +232,9 @@
 		$("#nav-menu-button").click(function() {
 			Polymer.dom(root).querySelector("#nav-drawer").togglePanel();
 		});
+		$(window).resize(function() {
+			Polymer.updateStyles();
+		});
 	});
 </script>
 </body></html>

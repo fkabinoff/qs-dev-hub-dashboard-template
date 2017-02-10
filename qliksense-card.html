@@ -38,20 +38,26 @@
         padding: 0;
       }
       .card-content ::content > .qvobject.with-title {
-        margin-top: -40px;
-        height: calc(100% + 40px);
+        margin-top: -48px;
+        height: calc(100% + 48px);
       }
       .card-content ::content > .qvobject.with-title header {
         /*padding-left: 0px;*/
         margin-right: 36px;
       }
-      .card-content ::content .sel-toolbar-card {
-        top: -35px !important;
+      .card-content ::content > .qvobject.with-title .sel-toolbar-card {
+        top: -36px !important;
       }
-      :host.fullscreen .card-content ::content .sel-toolbar-card {
+      :host.fullscreen .card-content ::content > .qvobject.with-title .sel-toolbar-card {
         top: 6px !important;
       } 
       :host.fullscreen .card-content ::content .sel-toolbar-list {
+        margin-right: 36px;
+      }
+      .card-content ::content .sel-toolbar-card {
+        top: -42px !important;
+      }
+      .card-content ::content > .qvobject:not(.with-title) .sel-toolbar-list {
         margin-right: 36px;
       }
     </style>
