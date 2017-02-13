@@ -28,7 +28,7 @@
       ::content .card-title {
         margin-top: -32px;
         padding-left: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 11px;
         font-size: 15px;
         color: #808080;
         font-weight: 700;
@@ -46,19 +46,19 @@
         flex: auto;
         padding: 0;
       }
-      .card-content ::content > .qvobject {
+      .card-content ::content > .qvobject.with-title {
         margin-top: -42px;
         height: calc(100% + 42px);
       }
-      .card-content ::content > .qvobject header {
+      .card-content ::content > .qvobject.with-title header {
         /*padding-left: 0px;*/
         margin-right: 12px;
         margin-top: -6px;
       }
-      .card-content ::content > .qvobject .sel-toolbar-card {
-        top: -40px !important;
+      .card-content ::content > .qvobject.with-title .sel-toolbar-card {
+        top: 0px !important;
       }
-      :host.fullscreen .card-content ::content > .qvobject .sel-toolbar-card {
+      :host.fullscreen .card-content ::content > .qvobject.with-title .sel-toolbar-card {
         top: 0px !important;
       } 
       :host.fullscreen .card-content ::content .sel-toolbar-list {
