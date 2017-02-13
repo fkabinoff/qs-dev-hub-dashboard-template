@@ -9,6 +9,9 @@
     height: 100%;
 }
 
+.qv-object *{
+    font-family: unset;
+}
 .qv-object{
     padding: 0 15px 15px;
 }
@@ -29,6 +32,19 @@
     background: #fff;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
     border-radius: 3px;
+}
+
+#KPI-01 .kpi-value{
+    color: #03A9F4 !important;
+}
+#KPI-02 .kpi-value{
+    color: #F44336!important;
+}
+#KPI-03 .kpi-value{
+    color: #FF9800!important;
+}
+#KPI-04 .kpi-value{
+    color: #607D8B!important;
 }
 
 
