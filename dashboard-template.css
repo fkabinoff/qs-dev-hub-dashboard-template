@@ -9,15 +9,16 @@
     height: 100%;
 }
 
-.qv-object *{
-    font-family: unset;
-}
 .qv-object{
     padding: 0 15px 15px;
 }
 .qv-object-kpi{
-    padding: 0;
+    padding: 0px;
 }
+.qv-object *{
+    font-family: unset;
+}
+
 
 .listbox-wrapper .qv-object{
     padding: 0px;
@@ -33,7 +34,6 @@
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
     border-radius: 3px;
 }
-
 #KPI-01 .kpi-value{
     color: #03A9F4 !important;
 }
@@ -46,7 +46,6 @@
 #KPI-04 .kpi-value{
     color: #607D8B!important;
 }
-
 
 /*Get rid of rounded borders on qliksense objects*/
 .qv-object, .sel-toolbar-card, .qv-object.qv-selections-active {
@@ -68,11 +67,11 @@
 /*adjusting active chart borders*/
 
 .sel-toolbar-card{
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-bottom: 1px solid #D9D9D9;
 }
 .qv-object.qv-selections-active{
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-top: 1px solid #D9D9D9;
 }
 
@@ -167,7 +166,7 @@
     background-color:   #F3F4F5;
 }
 
-/*AMZ*/
+/*new skin*/
 .paper-toolbar-0 .toolbar-tools.paper-toolbar .title {
     font-family: 'Montserrat', sans-serif;
 }

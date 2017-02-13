@@ -25,10 +25,19 @@
         border-radius: 3px;
         box-shadow: 0 1px 4px 0 rgba(0,0,0,.1) !important;
       }
+      ::content .card-title {
+        margin-top: -32px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        color: #808080;
+        font-weight: 700;
+      }
       .card-actions {
         padding: 0;
         border-bottom: 1px solid #F3F4F5;
         text-align: right;
+        z-index: 10;
       }
       .card-actions paper-icon-button {
         z-index: 10000;
@@ -38,21 +47,28 @@
         padding: 0;
       }
       .card-content ::content > .qvobject.with-title {
-        margin-top: -40px;
-        height: calc(100% + 40px);
+        margin-top: -42px;
+        height: calc(100% + 42px);
       }
       .card-content ::content > .qvobject.with-title header {
         /*padding-left: 0px;*/
-        margin-right: 36px;
+        margin-right: 12px;
+        margin-top: -6px;
       }
-      .card-content ::content .sel-toolbar-card {
-        top: -35px !important;
+      .card-content ::content > .qvobject.with-title .sel-toolbar-card {
+        top: -40px !important;
       }
-      :host.fullscreen .card-content ::content .sel-toolbar-card {
-        top: 6px !important;
+      :host.fullscreen .card-content ::content > .qvobject.with-title .sel-toolbar-card {
+        top: 0px !important;
       } 
       :host.fullscreen .card-content ::content .sel-toolbar-list {
-        margin-right: 36px;
+      /*  margin-right: 36px;*/
+      }
+      .card-content ::content .sel-toolbar-card {
+        top: -42px !important;
+      }
+      .card-content ::content > .qvobject:not(.with-title) .sel-toolbar-list {
+       /* margin-right: 36px;*/
       }
     </style>
 
