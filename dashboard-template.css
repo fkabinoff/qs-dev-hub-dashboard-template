@@ -1,3 +1,8 @@
+/*Devhub stuff*/
+.qvwrapper {
+    z-index: 100000 !important;
+}
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
     line-height: unset;
