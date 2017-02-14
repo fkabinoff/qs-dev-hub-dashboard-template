@@ -201,6 +201,7 @@ body{
     /*font-weight: bold;*/
 }
 .filter-container {
+    position: relative;
     height: calc(100vh - 65px);
 }
 @media (max-width: 767px) {
