@@ -6,6 +6,9 @@ body{
 .row {
     margin-bottom: 30px;
 }
+.col-xs-12{
+    margin-bottom: 15px;
+}
 
 /*Qlik objects*/
 .qvplaceholder, .qvobject {
@@ -24,11 +27,9 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-
 .listbox-wrapper .qv-object{
     padding: 0px;
 }
-
 
 /*KPIs*/
 .kpi {
@@ -97,13 +98,12 @@ body{
 }
 */
 /*adjusting active chart borders*/
-
 .sel-toolbar-card{
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-bottom: 1px solid #D9D9D9;
 }
 .qv-object.qv-selections-active{
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-top: 1px solid #D9D9D9;
 }
 
@@ -179,10 +179,7 @@ body{
     overflow: visible;
 }
 
-/*Drawer*/
-#drawer {
-    z-index: 1;
-}
+/*Filter Drawer*/
 .drawer-title {
     display: flex; 
     justify-content: center; 
@@ -198,19 +195,25 @@ body{
 .filter-container {
     height: calc(100vh - 35px);
 }
+@media (max-width: 767px) {
+    .drawer-title{
+        height: 56px !important;
+    }
+}
 
 /*Main content area (paper-body)*/
 .paper-body {
     padding: 30px 15px;
 }
 #main{
-    background-color:   #F3F4F5;
+    background-color: #F3F4F5;
 }
 
-/*new skin*/
+/*Main toolbar styles*/
 .paper-toolbar-0 .toolbar-tools.paper-toolbar .title {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 /*Current selections restyling*/
     .qv-panel-current-selections ,.qv-panel-current-selections .buttons-end .qv-subtoolbar-button, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
         background-color: #E8EAEC !important;
@@ -259,35 +262,35 @@ body{
     .qv-panel-current-selections .item .qv-state-count-bar{
         height: 4px;
     }
+
 /*Sidebar*/
-    paper-item{
-        background-color: #fff;
-        flex-direction: column !important;
-        height: 80px;
-        justify-content: center;
-        align-items: center;
-        color: #838383;
-    }
-    .paper-menu-0 .selectable-content.paper-menu .iron-selected{
-        font-weight: 300 !important;
-        background-color: #F5F5FA;
-        color: #3F51B5;
-    }
+paper-item{
+    background-color: #fff;
+    flex-direction: column !important;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    color: #838383;
+}
+.paper-menu-0 .selectable-content.paper-menu .iron-selected{
+    font-weight: 300 !important;
+    background-color: #F5F5FA;
+    color: #3F51B5;
+}
 
     .menu-option{
         font-family: 'Source Sans Pro', sans-serif;
     }
 
 /*modal styling*/
-    .modal{
-        z-index: 10050;
-    }
-    .modal-backdrop{
-        z-index: 10040;
-    }
+  .modal{
+      z-index: 10050;
+  }
+  .modal-backdrop{
+      z-index: 10040;
+  }
 
 /*color library*/
-
 .blue{ background-color:#3598dc;}
 .blue-1{ background-color:#2C3E50;}
 .blue-2{ background-color:#5e738b;}
@@ -345,3 +348,4 @@ body{
 .yellow-6{ background-color:#c5b96b;}
 .yellow-7{ background-color:#F4D03F;}
 .yellow-8{ background-color:#c8d046;}
+
