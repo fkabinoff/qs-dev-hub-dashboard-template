@@ -1,6 +1,9 @@
 /*Devhub stuff*/
 .qvwrapper {
     z-index: 100000 !important;
+    top: 5px !important;
+    right: 5px !important;
+    left: auto !important;
 }
 
 body{
