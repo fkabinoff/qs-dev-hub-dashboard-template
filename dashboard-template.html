@@ -36,9 +36,16 @@
 	<script src="../../resources/assets/external/requirejs/require.js"></script>
 	<!-- Bootstrap js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
 	<!-- Project code -->
-	<link rel="stylesheet" href="dashboard-template.css">
-	<script src="dashboard-template.js"></script>
+	<link rel="stylesheet" href="BM.css">
+	<script src="BM.js"></script>
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
 </head>
 
 <body class="fullbleed vertical layout">
@@ -52,6 +59,7 @@
 		<paper-header-panel main="">
 			<div class="paper-header">
 				<paper-toolbar>
+          
 					<paper-icon-button icon="menu" id="nav-menu-button" class="visible-xs-block"></paper-icon-button>
 
 					<div class="title"><img src="logo---qlik_white.png"> | Dashboard</div> <!--TITLE-->
@@ -105,23 +113,27 @@
 					<!-- Don't forget to add a <paper-item> in the <paper-menu> above to be able to navigate to any view you add -->
 					<div class="paper-body">
 						<div class="container-fluid">
-							<div class="row">
-								<div class="col-xs-12 col-sm-3">
-									<!-- A .qvplaceholder will become a droppable area in the dev-hub -->
+              <div class="row kpi-row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
 									<!-- Each .qvplaceholder must have a unique id -->
 									<!-- These .qvplaceholder objects below have an extra class, .kpi, which applies some simple styles intended for kpi objects -->
-									<div class="kpi qvplaceholder" id="KPI-01"></div> 
-								</div>
-								<div class="col-xs-12 col-sm-3">
-									<div class="kpi qvplaceholder" id="KPI-02"></div>
-								</div>
-								<div class="col-xs-12 col-sm-3">
-									<div class="kpi qvplaceholder" id="KPI-03"></div>
-								</div>
-								<div class="col-xs-12 col-sm-3">
-									<div class="kpi qvplaceholder" id="KPI-04"></div>
-								</div>
-							</div>
+                  <div class="kpi-side"><i class="fa fa-user" aria-hidden="true"></i></div>
+                  <div class="kpi red-2 qvplaceholder" id="KPI-01"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="kpi-side"><i class="fa fa-child" aria-hidden="true"></i></div>
+                  <div class="kpi qvplaceholder green-1" id="KPI-02"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="kpi-side"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                  <div class="kpi qvplaceholder purple-3" id="KPI-03"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="kpi-side"><i class="fa fa-fire" aria-hidden="true"></i></div>
+                  <div class="kpi qvplaceholder yellow-2" id="KPI-04"></div>
+                </div>
+              </div>
 							<div class="row">
 								<div class="col-xs-12 col-sm-8">
 									<!-- Placing a .qvplaceholder within a <qliksense-card> will create a cardified object -->
@@ -139,6 +151,7 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<qliksense-card content-height="300px">
+                    <div class="card-title qvt-visualization-title">Card Title (object without title)</div>
 										<div class="with-title qvplaceholder" id="QV1-03"></div>
 									</qliksense-card>
 								</div>

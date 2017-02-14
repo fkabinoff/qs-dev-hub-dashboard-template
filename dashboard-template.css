@@ -1,3 +1,7 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: unset;
+}
 /*Bootstrap layout*/
 .row {
     margin-bottom: 30px;
@@ -14,10 +18,13 @@
 
 .qv-object{
     padding: 0 15px 15px;
+    background-color: transparent;
 }
-
-.qv-object.kpi{
-    padding: 0;
+.qv-object-kpi{
+    padding: 0px;
+}
+.qv-object *{
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .listbox-wrapper .qv-object{
@@ -26,16 +33,55 @@
 
 /*KPIs*/
 .kpi {
-    height: 25vw;
+    height: 6vw;
     max-height: 180px;
-    min-height: 120px;
-    background: #fff;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
-    border-radius: 3px;
+    min-height: 80px;
+    /*background: #fff;*/
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 2px;
+    color: #fff;
+    margin-bottom: 15px;
+
+}
+.kpi article{
+     width: 80%;
+}
+.kpi-row{
+    margin-bottom: 15px;
+}
+.kpi-side{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -25px;
+    width: 40px;
+    height: 40px;
+}
+.kpi-side i{
+    font-size: 40px;
+    opacity: .2;
+    color: #fff;
+}
+.qv-object-kpi .kpi-data{
+    align-items: flex-start;
+    padding-left: 15px;
+}
+
+#KPI-01 .kpi-value{
+    color: #fff !important;
+}
+#KPI-02 .kpi-value{
+    color: #fff!important;
+}
+#KPI-03 .kpi-value{
+    color: #fff!important;
+}
+#KPI-04 .kpi-value{
+    color: #fff!important;
 }
 
 /*Get rid of rounded borders on qliksense objects*/
-.qv-object, .sel-toolbar-card, .qv-object.qv-selections-active {
+/*.qv-object, .sel-toolbar-card, .qv-object.qv-selections-active {
     -webkit-border-top-left-radius: 0;
     -moz-border-radius-topleft: 0;
     border-top-left-radius: 0;
@@ -50,7 +96,7 @@
     -moz-border-radius-bottomright: 0;
     border-bottom-right-radius: 0;
 }
-
+*/
 /*adjusting active chart borders*/
 .sel-toolbar-card{
     border: 1px solid #ccc;
@@ -58,7 +104,6 @@
 }
 .qv-object.qv-selections-active{
     border: 1px solid #ccc;
-
     border-top: 1px solid #D9D9D9;
 }
 
@@ -95,6 +140,7 @@
 .current-selections-placeholder span {
     display: none;
 }
+
 @media (max-width: 767px) {
     .buttons.borderbox {
         width: 45px;
@@ -111,7 +157,14 @@
     .drawer-title{
         height: 56px !important;
     }
+    .kpi-row{
+        margin-bottom: 0px;
+    }
+    .row{
+        margin-bottom: 0;
+    }
 }
+
 
 /*Fix selection toolbar options placement*/
 .qv-panel-current-selections .remove, .qv-panel-current-selections .unlock, .qv-panel-current-selections .lock {
@@ -136,6 +189,7 @@
     color: #fff;
     height: 65px;
     font-size: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
     /*font-weight: bold;*/
 }
 .filter-container {
@@ -157,48 +211,57 @@
 
 /*Main toolbar styles*/
 .paper-toolbar-0 .toolbar-tools.paper-toolbar .title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*Current selections restyling*/
-.qv-panel-current-selections ,.qv-panel-current-selections .buttons-end .qv-subtoolbar-button, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
-    background-color: #E8EAEC !important;
-}
-.qv-panel-current-selections .buttons .qv-subtoolbar-button i, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button i{
-    color: #838383;
-}
-.qv-panel-current-selections .no-selection{
-    color: #838383;
-}
-.qv-panel-current-selections .buttons{
-    background: unset;
-    border: unset;
-}
-.qv-panel-current-selections .wrap, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
-    border: unset;
-}
-.qv-panel-current-selections .item{
-    font-weight: 300;
-    font-family: Arial, sans-serif;
-    color: #838383;
+    .qv-panel-current-selections ,.qv-panel-current-selections .buttons-end .qv-subtoolbar-button, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
+        background-color: #E8EAEC !important;
+    }
+    .qv-panel-current-selections .buttons .qv-subtoolbar-button i, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button i{
+        color: #838383;
+    }
+    .qv-panel-current-selections .no-selection{
+        color: #838383;
+    }
+    .qv-panel-current-selections .buttons{
+        background: unset;
+        border: unset;
+    }
+    .qv-panel-current-selections .wrap, .qv-panel-current-selections .buttons .qv-subtoolbar-button, .qv-panel-current-selections .buttons-end .qv-subtoolbar-button{
+        border: unset;
+    }
+    .qv-panel-current-selections{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .qv-panel-current-selections .item{
+        font-weight: 300;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #838383;
+        font-size: 11px;
+    }
+    .qv-panel-current-selections .item:hover{
+        color: #E8EAEC;
+    }
+    .qv-panel-current-selections li{
 
-}
-.qv-panel-current-selections .item:hover{
-    color: #E8EAEC;
-}
-.qv-panel-current-selections .remove{
-    padding-right: 5px;
-}
-.qv-panel-current-selections .buttons-end{
-    border-left: none;
-    box-shadow: none;
-}
-.qv-global-search-container{
-    z-index: 10003;
-}
-#dropShadow{
-    z-index: 10002;
-}
+    }
+    .qv-panel-current-selections .remove{
+        padding-right: 5px;
+    }
+    .qv-panel-current-selections .buttons-end{
+        border-left: none;
+        box-shadow: none;
+    }
+    .qv-global-search-container{
+        z-index: 10003;
+    }
+    #dropShadow{
+        z-index: 10002;
+    }
+    .qv-panel-current-selections .item .qv-state-count-bar{
+        height: 4px;
+    }
 
 /*Sidebar*/
 paper-item{
@@ -215,10 +278,74 @@ paper-item{
     color: #3F51B5;
 }
 
+    .menu-option{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
 /*modal styling*/
-.modal{
-    z-index: 10050;
-}
-.modal-backdrop{
-    z-index: 10040;
-}
+  .modal{
+      z-index: 10050;
+  }
+  .modal-backdrop{
+      z-index: 10040;
+  }
+
+/*color library*/
+.blue{ background-color:#3598dc;}
+.blue-1{ background-color:#2C3E50;}
+.blue-2{ background-color:#5e738b;}
+.blue-3{ background-color:#22313F;}
+.blue-4{ background-color:#67809F;}
+.blue-5{ background-color:#578ebe;}
+.blue-6{ background-color:#94A0B2;}
+.blue-7{ background-color:#5C9BD1;}
+.blue-8{ background-color:#4c87b9;}
+.blue-9{ background-color:#4B77BE;}
+.green{ background-color:#32c5d2;}
+.green-1{ background-color:#4DB3A2;}
+.green-2{ background-color:#44b6ae;}
+.green-3{ background-color:#26C281;}
+.green-4{ background-color:#1BBC9B;}
+.green-5{ background-color:#1BA39C;}
+.green-6{ background-color:#2ab4c0;}
+.green-7{ background-color:#3faba4;}
+.green-8{ background-color:#29b4b6;}
+.green-9{ background-color:#36D7B7;}
+.grey{ background-color:#E5E5E5;}
+.grey-1{ background-color:#fafafa;}
+.grey-2{ background-color:#95A5A6;}
+.grey-3{ background-color:#555555;}
+.grey-4{ background-color:#525e64;}
+.grey-5{ background-color:#ACB5C3;}
+.grey-6{ background-color:#bfcad1;}
+.grey-7{ background-color:#BFBFBF;}
+.grey-8{ background-color:#e9edef;}
+.purple{ background-color:#8E44AD;}
+.purple-1{ background-color:#8775a7;}
+.purple-2{ background-color:#BF55EC;}
+.purple-3{ background-color:#8775a7;}
+.purple-4{ background-color:#9A12B3;}
+.purple-5{ background-color:#796799;}
+.purple-6{ background-color:#8877a9;}
+.purple-7{ background-color:#8E44AD;}
+.purple-8{ background-color:#9B59B6;}
+.red{ background-color:#e7505a;}
+.red-1{ background-color:#EF4836;}
+.red-2{ background-color:#f36a5a;}
+.red-3{ background-color:#e35b5a;}
+.red-4{ background-color:#e43a45;}
+.red-5{ background-color:#E08283;}
+.red-6{ background-color:#d05454;}
+.red-7{ background-color:#E26A6A;}
+.red-8{ background-color:#D91E18;}
+.white{ background-color:#ffffff;}
+.yellow{ background-color:#c49f47;}
+.yellow-1{ background-color:#f2784b;}
+.yellow-2{ background-color:#f3c200;}
+.yellow-3{ background-color:#E87E04;}
+.yellow-4{ background-color:#c5bf66;}
+.yellow-5{ background-color:#F7CA18;}
+.yellow-6{ background-color:#c5b96b;}
+.yellow-7{ background-color:#F4D03F;}
+.yellow-8{ background-color:#c8d046;}
+
