@@ -109,7 +109,7 @@ body{
 
 /*Qlik Contextual */
 .qui-immidiateContextual {
-    z-index: 10002;
+    z-index: 10004;
 }
 
 /*Selection toolbar */
@@ -193,7 +193,7 @@ body{
     /*font-weight: bold;*/
 }
 .filter-container {
-    height: calc(100vh - 35px);
+    height: calc(100vh - 65px);
 }
 @media (max-width: 767px) {
     .drawer-title{
