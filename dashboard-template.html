@@ -32,9 +32,12 @@
 	<script src="../../resources/assets/external/requirejs/require.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
 	<!-- Project code -->
-	<link rel="stylesheet" href="dashboard-template.css">
-	<script src="dashboard-template.js"></script>
+	<link rel="stylesheet" href="BM.css">
+	<script src="BM.js"></script>
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 </head>
@@ -56,7 +59,7 @@
 			
 		<paper-icon-button class="filter-drawer-toggle" icon="more-vert" paper-drawer-toggle=""></paper-icon-button>
 	</paper-toolbar>
-	<div id="CurrentSelections" class="qvobjects">
+	<div id="CurrentSelections" class="qvplaceholders">
 		<div class="current-selections-placeholder">
 			<span>Connect to app to see Selection Toolbar</span>
 		</div>
@@ -94,27 +97,32 @@
 	<iron-pages main="" selected="0">
 	<div class="paper-body">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 col-sm-3">
-					<div class="kpi qvplaceholder" id="KPI-01"></div>
+			<div class="row kpi-row">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="kpi-side"><i class="fa fa-user" aria-hidden="true"></i></div>
+					<div class="kpi red-2 qvplaceholder" id="KPI-01"></div>
+
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					<div class="kpi qvplaceholder" id="KPI-02"></div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="kpi-side"><i class="fa fa-child" aria-hidden="true"></i></div>
+					<div class="kpi qvplaceholder green-1" id="KPI-02"></div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					<div class="kpi qvplaceholder" id="KPI-03"></div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="kpi-side"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+					<div class="kpi qvplaceholder purple-3" id="KPI-03"></div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					<div class="kpi qvplaceholder" id="KPI-04"></div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="kpi-side"><i class="fa fa-fire" aria-hidden="true"></i></div>
+					<div class="kpi qvplaceholder yellow-2" id="KPI-04"></div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-8">
+				<div class="col-xs-12 col-sm-4">
 					<qliksense-card content-height="300px">
-					<div class="with-title qvplaceholder" id="QV1-01"></div>
+					<div class="qvplaceholder" id="QV1-01"></div>
 					</qliksense-card>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-12 col-sm-8">
 					<qliksense-card content-height="300px">
 					<div class="with-title qvplaceholder" id="QV1-02"></div>
 					</qliksense-card>
@@ -123,8 +131,8 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<qliksense-card content-height="300px">
-					<div class="card-title">Card Title (QV object without title)</div>
-					<div class="with-title qvplaceholder" id="QV1-03"></div>
+					<div class="card-title qvt-visualization-title">Card Title (QV object without title)</div>
+					<div class="qvplaceholder" id="QV1-03"></div>
 					</qliksense-card>
 				</div>
 			</div>
