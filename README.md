@@ -1,4 +1,4 @@
-# qs-dev-hub-dashboard-template
+# DAR Mashup Template
 DAR template for Qlik Sense dev hub. Watch a video here - [Introducing DAR Mashup Template](https://community.qlik.com/blogs/qlikviewdesignblog/2017/02/24/introducing-dar-mashup-template)
 
 
