@@ -18,6 +18,11 @@ body{
     margin-bottom: 15px;
 }
 
+/* LUI */
+.lui-popover-container {
+    z-index: 10004;
+}
+
 /*Qlik objects*/
 .qvplaceholder, .qvobject {
     width: 100%;
@@ -147,6 +152,11 @@ body{
 }
 .current-selections-placeholder span {
     display: none;
+}
+
+.qv-panel-current-selections .qv-selections-pager {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 @media (max-width: 767px) {
